@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AltSchool Africa Application Form</title>
+</head>
+<body>
+    <header id="top">
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a> |
+            <a href="form.html" aria-current="page">Application Form</a>
+        </nav>
+
+        <h1>AltSchool Africa Application Form</h1>
+        <p>Please complete the form below with your details.</p>
+    </header>
+
+    <main>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <p>
+                    <label for="first-name">First Name</label><br>
+                    <input type="text" id="first-name" name="first_name" autocomplete="given-name" required>
+                </p>
+
+                <p>
+                    <label for="last-name">Last Name</label><br>
+                    <input type="text" id="last-name" name="last_name" autocomplete="family-name" required>
+                </p>
+
+                <p>
+                    <label for="middle-name">Middle Name</label><br>
+                    <input type="text" id="middle-name" name="middle_name" autocomplete="additional-name">
+                </p>
+
+                <p>
+                    <label for="email">Email Address</label><br>
+                    <input type="email" id="email" name="email" autocomplete="email" required>
+                </p>
+
+                <p>
+                    <label for="phone">Phone Number</label><br>
+                    <input type="tel" id="phone" name="phone" autocomplete="tel" required>
+                </p>
+
+                <fieldset>
+                    <legend>Gender</legend>
+                    <p>
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Male</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <label for="date-of-birth">Date of Birth</label><br>
+                    <input type="date" id="date-of-birth" name="date_of_birth" required>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Contact and Location</legend>
+
+                <p>
+                    <label for="address">Address</label><br>
+                    <textarea id="address" name="address" rows="4" autocomplete="street-address" required></textarea>
+                </p>
+
+                <p>
+                    <label for="country">Country</label><br>
+                    <select id="country" name="country" autocomplete="country-name" required>
+                        <option value="">Select your country</option>
+                        <option value="nigeria">Nigeria</option>
+                        <option value="ghana">Ghana</option>
+                        <option value="kenya">Kenya</option>
+                        <option value="south-africa">South Africa</option>
+                        <option value="other">Other</option>
+                    </select>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Education and Program</legend>
+
+                <p>
+                    <label for="education">Highest Educational Qualification</label><br>
+                    <select id="education" name="education" required>
+                        <option value="">Select qualification</option>
+                        <option value="secondary">Secondary School Certificate</option>
+                        <option value="ond">OND</option>
+                        <option value="hnd">HND</option>
+                        <option value="bsc">B.Sc / B.A / B.Tech</option>
+                        <option value="msc">M.Sc / M.A / M.Tech</option>
+                        <option value="other">Other</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="school">School/Institution Attended</label><br>
+                    <input type="text" id="school" name="school" autocomplete="organization">
+                </p>
+
+                <p>
+                    <label for="program">Preferred Program</label><br>
+                    <select id="program" name="program" required>
+                        <option value="">Select a program</option>
+                        <option value="software-engineering">School of Software Engineering</option>
+                        <option value="product">School of Product</option>
+                        <option value="data-ai">Data and AI</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="track">Preferred Track</label><br>
+                    <select id="track" name="track">
+                        <option value="">Select a track</option>
+                        <option value="frontend">Frontend Engineering</option>
+                        <option value="backend">Backend Engineering</option>
+                        <option value="cloud">Cloud Engineering</option>
+                    </select>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Account Information</legend>
+
+                <p>
+                    <label for="password">Password</label><br>
+                    <input type="password" id="password" name="password" minlength="8"
+                           autocomplete="new-password" required>
+                </p>
+
+                <p>
+                    <label for="confirm-password">Re-enter Password</label><br>
+                    <input type="password" id="confirm-password" name="confirm_password"
+                           minlength="8" autocomplete="new-password" required>
+                </p>
+
+                <p>
+                    <label for="referral">Referral Code (Optional)</label><br>
+                    <input type="text" id="referral" name="referral_code">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Confirmation</legend>
+
+                <p>
+                    <input type="checkbox" id="robot" name="not_robot" required>
+                    <label for="robot">Please confirm that you are not a robot.</label>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the Terms and Conditions.</label>
+                </p>
+            </fieldset>
+
+            <p>
+                <button type="submit">Create Account</button>
+            </p>
+        </form>
+
+        <p><a href="#top">Back to top</a></p>
+    </main>
+
+    <footer>
+        <address>
+            No 7, Kudirat Abiola, Egbeda, Lagos
+        </address>
+        <p>&copy; 2026 Korede Adekoya. All rights reserved.</p>
+    </footer>
+</body>
+</html>
